@@ -13,7 +13,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchVCardData = async () => {
       try {
-        const response = await axios.get("http://localhost:3002/vcard");
+        const response = await axios.get("https://web-neu.onrender.com/vcard");
         setVCardData(response.data); 
       } catch (error) {
         console.error("Error fetching VCard data:", error);
@@ -37,7 +37,7 @@ const AdminDashboard = () => {
 
   const handeldelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3002/vcard/${id}`);
+      await axios.delete(`https://web-neu.onrender.com/vcard/${id}`);
       toast.warning('Data Deleted Successfully!');
       setVCardData((prevData) => prevData.filter((item) => item._id !== id));
     } catch (error) {
@@ -93,7 +93,7 @@ const AdminDashboard = () => {
               <td>{data.email}</td>
               <td>{data.state}</td>
               <td>{data.district}</td>
-              <td><img src={`http://localhost:3002${data.imageUrl}`} alt="" className="img-thumbnail rounded-circle img-fluid" 
+              <td><img src={`https://web-neu.onrender.com${data.imageUrl}`} alt="" className="img-thumbnail rounded-circle img-fluid" 
                 style={{ width: "50px", height: "50px", objectFit: "cover" }}/></td>
               <td ><button type="button" class="btn btn-warning"  onClick={() => handleUpdate(data._id)} >Edit</button></td>
               <td ><button type="button" class="btn btn-success"  onClick={() => handleViewCard(data._id)} >PrintCard</button></td>

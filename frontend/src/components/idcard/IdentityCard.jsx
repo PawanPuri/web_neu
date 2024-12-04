@@ -10,7 +10,7 @@ const IdentityCard = () => {
   useEffect(() => {
     // Fetch data by ID
     axios
-      .get(`http://localhost:3002/vcard/${id}`)
+      .get(`https://web-neu.onrender.com/vcard/${id}`)
       .then((response) => {
         setVCardData(response.data);
       })
@@ -63,7 +63,7 @@ const IdentityCard = () => {
                 </div>
                 <div className="identity-right">
                   <img
-                    src={`http://localhost:3002${data.imageUrl}`}
+                    src={`https://web-neu.onrender.com${data.imageUrl}`}
                     alt="Profile"
                     className="profile-image"
                   />

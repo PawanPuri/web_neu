@@ -1,0 +1,91 @@
+.print-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.identity-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+.identity-card {
+  width: 70%;
+  padding: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.identity-card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.identity-left {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.identity-left h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.identity-left p {
+  margin: 10px 0;
+}
+
+.identity-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.qr-code {
+  width: 120px;
+  height: 120px;
+}
+
+.print-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.print-button:hover {
+  background-color: #45a049;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printable-cards {
+    visibility: visible;
+  }
+
+  .identity-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .identity-card {
+    page-break-inside: avoid;
+  }
+}

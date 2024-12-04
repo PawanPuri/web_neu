@@ -1,0 +1,57 @@
+.admin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    background-color: #f4f4f4; /* Optional: Background color for better visibility */
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Space around the content */
+    width: 400px; /* Set form width */
+  }
+  
+  .form-container {
+    width: 100%; /* Full width of the container */
+    padding: 20px;
+  }
+  .form-container h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-box {
+    margin-bottom: 15px; /* Space between input fields */
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .input-box button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .input-box button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

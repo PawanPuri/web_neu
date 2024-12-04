@@ -134,7 +134,7 @@ END:VCARD`
     if (formData.image) formDataObj.append("image", formData.image);
 
     try {
-      await axios.post("http://localhost:3002/vcard", formDataObj);
+      await axios.post("https://web-neu.onrender.com/vcard", formDataObj);
       toast.success('Form Submited Successfully!!')
       onClose();
     } catch (error) {

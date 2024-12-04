@@ -47,7 +47,7 @@ TEL;TYPE=CELL:${data.phoneNumber}
 EMAIL:${data.email}
 ADR;TYPE=HOME:;;${data.address}
 END:VCARD`
-      .replace(/\s\s+/g, " ")
+      
       .trim();
 
   const handleChange = (e) => {

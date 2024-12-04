@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap");
-/* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
 .flex-center-start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,25 +12,13 @@
   justify-content: start;
 }
 
-/* Normal desktop :1200px. */
-/* Normal desktop :992px. */
-/* Tablet desktop :768px. */
-/* small mobile :320px. */
-/* Large Mobile :480px. */
-/* 1. Theme default css */
-/* Normal desktop :1200px. */
-/* Normal desktop :992px. */
-/* Tablet desktop :768px. */
-/* small mobile :320px. */
-/* Large Mobile :480px. */
-/* line 6, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
+
 body {
   font-family: "Muli", sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 25, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 .img {
   max-width: 100%;
   -webkit-transition: 0.3s;
@@ -40,7 +27,6 @@ body {
   transition: 0.3s;
 }
 
-/* line 29, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 a,
 .button {
   -webkit-transition: 0.3s;
@@ -49,7 +35,6 @@ a,
   transition: 0.3s;
 }
 
-/* line 33, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 a:focus,
 .button:focus, button:focus {
   text-decoration: none;
@@ -5768,5 +5753,3 @@ h6 {
   margin-right: 10px;
   font-size: 12px;
 }
-
-/*# sourceMappingURL=style.css.map */

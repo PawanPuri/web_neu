@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (credentials) => {
     setLoading(true);
     try {
-      const { data } = await axios.post('http://localhost:3002/auth/login', credentials);
+      const { data } = await axios.post('https://web-neu.onrender.com/auth/login', credentials);
       setToken(data.access_token); // Save token to state
       const decodedToken = JSON.parse(atob(data.access_token.split('.')[1])); // Decode JWT payload
       console.log(decodedToken)

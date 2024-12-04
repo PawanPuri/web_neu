@@ -20,7 +20,7 @@ const Update = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3002/vcard/${id}`);
+        const response = await axios.get(`https://web-neu.onrender.com/vcard/${id}`);
         setFormData(response.data);
       } catch (error) {
         console.error("Error fetching user data:", error);
@@ -39,7 +39,7 @@ const Update = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:3002/vcard/${id}`, formData);
+      await axios.put(`https://web-neu.onrender.com/vcard/${id}`, formData);
       navigate("/dashboard");
       toast.success('Data Updated Successfully!!')
     } catch (error) {

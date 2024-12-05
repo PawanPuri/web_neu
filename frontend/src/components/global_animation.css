@@ -1,75 +1,34 @@
-/* @keyframes horizontalSlide {
-    0% {
-        transform: translateX(-20%);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
 
-.shape_1 {
-    animation: horizontalSlide 1s ease-in-out;
-    animation-delay: 0.2s; /* Match the delay from the data-wow-delay attribute */
-/* }
-
-.shape_2 {
-    animation: horizontalSlide 1s ease-in-out;
-    animation-delay: 0.2s; /* Match the delay from the data-wow-delay attribute */
-/* } */ */
-
-/* 
-
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.fadeInLeft {
-    animation: fadeInLeft 1s ease-in;
-} */ 
 html {
-    scroll-behavior: smooth; /* Enables smooth scrolling */
+    scroll-behavior: smooth; 
 }
 
 .header-area {
-    position: fixed; /* Keeps the header fixed at the top */
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: transparent; /* Optional: Set the background */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
-    transition: background-color 0.3s ease; /* Smooth header transition */
+    background-color: transparent; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
 }
 
 .header-area.scrolled {
-    background-color: black; /* Header background after scrolling */
+    background-color: black; 
 }
 
 
-/* Default state before animation */
 .single_propram {
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.8s ease-out;
   }
   
-  /* State when in view */
   .single_propram.in-view {
     opacity: 1;
     transform: translateY(0);
   }
   
-  /* Sequential animation */
   .single_propram:nth-child(1) {
     transition-delay: 0.2s;
   }
@@ -86,7 +45,6 @@ html {
     transition-delay: 0.8s;
   }
   
-  /* Define keyframes for rotation */
 @keyframes rotate {
     0% {
       transform: rotate(0deg);
@@ -96,9 +54,8 @@ html {
     }
   }
   
-  /* Apply rotation animation */
   .rotate {
-    animation: rotate 10s linear infinite; /* Adjust duration as needed */
+    animation: rotate 10s linear infinite; 
   }
  
 
@@ -109,66 +66,59 @@ html {
 
 
 
-  /* Parent container */
 .about_thumb {
   position: relative;
-  overflow: hidden; /* Ensures the overlay doesn't overflow */
+  overflow: hidden; 
 }
 
-/* Style the image */
 .about_thumb img {
   display: block;
   width: 100%;
   height: auto;
-  transition: transform 0.3s ease-in-out; /* Smooth zoom on hover */
+  transition: transform 0.3s ease-in-out; 
 }
 
-/* Overlay layer */
 .about_thumb::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%; /* Initially hide the overlay */
+  left: -100%;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 255, 0.5); /* Semi-transparent blue */
-  transition: left 0.5s ease-in-out; /* Smooth slide-in effect */
+  background: rgba(0, 0, 255, 0.5); 
+  transition: left 0.5s ease-in-out; 
   z-index: 999;
 }
 
-/* Hover effect */
 .about_thumb:hover::before {
-  left: 0; /* Slide in the overlay from the left */
+  left: 0;
 }
 
 .about_thumb:hover img {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1); 
 }
 
 
 
-/* Container for animated border */
 .animated-border {
   display: inline-block;
   position: relative;
-  padding: 15px 30px; /* Add padding around the text */
-  border-radius: 50px; /* Rounded border */
+  padding: 15px 30px; 
+  border-radius: 50px; 
   background: linear-gradient(90deg, #ff6ec4, #7873f5, #4facfe);
-  background-size: 300% 300%; /* To enable smooth gradient animation */
-  animation: borderAnimation 4s linear infinite; /* Infinite animation */
-  z-index: 0; /* Place it below the text */
+  background-size: 300% 300%; 
+  animation: borderAnimation 4s linear infinite; 
+  z-index: 0; 
 }
 
-/* Text styling */
 .animated-border h3 {
   position: relative;
-  z-index: 1; /* Place text above the border */
-  margin: 0; /* Remove default margins */
-  color: #fff; /* Text color */
-  font-size: 2rem; /* Adjust font size as needed */
+  z-index: 1; 
+  margin: 0; 
+  color: #fff; 
+  font-size: 2rem;
 }
 
-/* Keyframes for gradient animation */
 @keyframes borderAnimation {
   0% {
     background-position: 0% 50%;
@@ -183,7 +133,6 @@ html {
 
 
 
-/* Container for the image and hover effect */
 .single_propram .thumb {
   position: relative;
   overflow: hidden;
@@ -196,7 +145,7 @@ html {
 }
 
 .single_propram .thumb:hover img {
-  transform: scale(1.1); /* Slight zoom effect */
+  transform: scale(1.1);
 }
 
 .single_propram .thumb::after {
@@ -206,7 +155,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:  rgba(0, 0, 255, 0.5); /* Dark layer */
+  background-color:  rgba(0, 0, 255, 0.5); 
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -215,7 +164,6 @@ html {
   opacity: 1;
 }
 
-/* Keyframe for fading and sliding in */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -249,7 +197,6 @@ html {
   }
 }
 
-/* General animation classes */
 .fadeInUp {
   animation: fadeInUp 1s ease forwards;
   opacity: 0;
@@ -265,7 +212,6 @@ html {
   opacity: 0;
 }
 
-/* Delay classes for staggered animations */
 .delay-1 {
   animation-delay: 0.3s;
 }

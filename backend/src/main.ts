@@ -32,7 +32,7 @@ async function bootstrap() {
 
   // Enable CORS to allow requests from your frontend
   app.enableCors({
-    origin: 'http://localhost:3000', // Allow requests from the frontend (React app)
+    origin:  'https://web-neu-1.onrender.com',// Allow requests from the frontend (React app)
     methods: 'GET,POST,PUT,DELETE,OPTIONS', // Allow the HTTP methods
     credentials: true, // Allow credentials such as cookies and authorization headers
     allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'Origin'], // Add any other headers if needed
